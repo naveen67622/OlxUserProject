@@ -19,6 +19,16 @@ stage('Run') {
 steps {
 echo 'Run'
 }
+  }
+stage('Testreportusing using jacoco') {
+steps {
+echo 'jacoco'
+    }
+stage('Building  Docker Image') {
+steps {
+echo 'Building Docker Image'
+}
+}
 }
 }
 }
