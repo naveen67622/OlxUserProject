@@ -2,25 +2,15 @@ pipeline {
 
 agent any
 
-
-
-
-
-
-
 stages {
 
-stage('Checkout') {
 
-steps {
 
-git 'https://github.com/naveen67622/OlxUserProject.git'
 
-}
 
-}
 
-stage('Compile') {
+
+stage('compile') {
 
 steps {
 
@@ -40,7 +30,7 @@ bat 'mvn package'
 
 }
 
-stage('Test report using jacoco ') {
+stage('Test Report using jacoco') {
 
 steps {
 
@@ -50,7 +40,7 @@ echo 'jacoco'
 
 }
 
-stage('Building Docker Image ') {
+stage('Building Docker Image') {
 
 steps {
 
